@@ -70,6 +70,7 @@
 - (void) sendPayStatus:(NSNotification *)noti {
     NSDictionary *infoDic = [noti object];
     NSString *extraResult = infoDic[@"EXTRA_RESULT"];
+    NSLog(@"extra result is %@",extraResult);
     if ([@"0" isEqualToString:extraResult]) {
         extraResult = @"1";
     }
